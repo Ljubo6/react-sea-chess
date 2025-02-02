@@ -1,4 +1,5 @@
 import { InformationLayout } from './InformationLayout.jsx';
+import PropTypes from 'prop-types';
 
 export const Information = ({ currentPlayer, isDraw, isWinner }) => {
 	let message = `Ходит: ${currentPlayer}`;
@@ -8,4 +9,9 @@ export const Information = ({ currentPlayer, isDraw, isWinner }) => {
 		message = `Победил: ${currentPlayer}`;
 	}
 	return <InformationLayout message={message}></InformationLayout>;
+};
+Information.propTypes = {
+	currentPlayer: PropTypes.string.isRequired,
+	isDraw: PropTypes.bool.isRequired,
+	isWinner: PropTypes.bool.isRequired,
 };
