@@ -1,0 +1,22 @@
+.game-container {
+	background: lightsalmon;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.reset-button {
+	padding: 10px 20px;
+	margin-top: 20px;
+	font-size: 18px;
+	color: white;
+	background: #ff4c4c;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.reset-button:hover {
+	background: red;
+}

@@ -1,0 +1,23 @@
+.cell {
+	width: 100px;
+	height: 100px;
+	background: white;
+	border-radius: 5px;
+	font-size: 36px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 2px solid black;
+	transition: 0.3s;
+}
+
+.field {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-gap: 5px;
+	justify-content: center;
+	margin: 20px auto;
+}
+
+.cell:hover {
+	background: lightgray;
+}
